@@ -16,6 +16,7 @@ final class CurrencyService: CurrencyServiceProtocol {
     static let shared = CurrencyService()
 
     let endpoint = "http://data.fixer.io/api/latest?access_key=51f7dbbd76b4629ecc2be77c40627361&symbols=USD,CNY,SGD,AUD,CAD,PLN,MXN&format=1"
+    
     var task: URLSessionTask?
 
     func fetchConverter(_ completion: @escaping ((Result<Converter, ErrorResult>) -> Void)) {

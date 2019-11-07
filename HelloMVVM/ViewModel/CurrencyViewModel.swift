@@ -9,6 +9,8 @@
 import Foundation
 
 struct CurrencyViewModel {
+    var onErrorHandling: ((ErrorResult)->Void)?
+    
     weak var dataSource: GenericDataSource<CurrencyRate>?
 
     init(dataSource: GenericDataSource<CurrencyRate>?) {
@@ -23,7 +25,7 @@ struct CurrencyViewModel {
                 case let .success(converter):
                     self.dataSource?.data.value = converter.rates
                 case let .failure(error):
-                    print("Parser error \(error)")
+                    self.onErrorHandling?(error)
                 }
             }
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4EF7D52338A55E0065502F /* CurrencyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF7D42338A55E0065502F /* CurrencyDataSource.swift */; };
 		CEF18C732334CD8E00C49C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF18C722334CD8E00C49C73 /* AppDelegate.swift */; };
 		CEF18C752334CD8E00C49C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF18C742334CD8E00C49C73 /* SceneDelegate.swift */; };
 		CEF18C7A2334CD8E00C49C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF18C782334CD8E00C49C73 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4EF7D42338A55E0065502F /* CurrencyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataSource.swift; sourceTree = "<group>"; };
 		CEF18C6F2334CD8E00C49C73 /* HelloMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF18C722334CD8E00C49C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF18C742334CD8E00C49C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				CEF18C9E2334D19A00C49C73 /* GenericDataSource.swift */,
 				CEF18C9F2334D19A00C49C73 /* CurrencyViewModel.swift */,
+				CE4EF7D42338A55E0065502F /* CurrencyDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				CEF18CA72334D19A00C49C73 /* ParserHelper.swift in Sources */,
 				CEF18CAA2334D19A00C49C73 /* CurrencyRate.swift in Sources */,
 				CEF18C952334D13C00C49C73 /* CurrencyViewController.swift in Sources */,
+				CE4EF7D52338A55E0065502F /* CurrencyDataSource.swift in Sources */,
 				CEF18CA52334D19A00C49C73 /* ErrorResult.swift in Sources */,
 				CEF18CAB2334D19A00C49C73 /* DynamicValue.swift in Sources */,
 				CEF18CA62334D19A00C49C73 /* CurrencyService.swift in Sources */,

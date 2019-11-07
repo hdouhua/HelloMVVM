@@ -31,7 +31,15 @@ class CurrencyViewController: UIViewController {
         dataSource.data.addAndNotify(observer: self) { [weak self] _ in
             self?.tableView.reloadData()
         }
-
+        
+        viewModel.onErrorHandling = { error in
+            let alert = UIAlertController(title: "An error occured", message: error.localizedDescription, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         viewModel.fetchCurrencies()
     }
 
